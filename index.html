@@ -14,7 +14,7 @@
       direction: rtl;
     }
     img#back{
-      position: absolute;
+      position: fixed;
       display: flex;
       width: 100%;
       height: auto;
@@ -22,14 +22,23 @@
       z-index: -1000;
     }
     header {
+      position: fixed;
+      z-index: 1000;
       text-align: center;
       padding: 40px 10px;
       background-color: #3b1f1f;
       font-size: 2em;
       font-weight: bold;
+      width: 100%;
+      top: 0;
+      right: 0;
     }
 
+    .first {
+        padding-top: 130px;
+    }
     .accordion-section {
+      
       margin: 10px 20px;
       border: 1px solid #fff2;
       border-radius: 8px;
@@ -123,7 +132,8 @@
   <header>☕ منوی کافه سولیستا</header>
   <img id="back" src="pic/ChatGPT Image Jul 2, 2025, 02_09_35 PM.png" alt="">
   <!-- Accordion Category -->
-  <div class="accordion-section">
+   <div class="first">
+  <div  class="accordion-section">
     <div class="accordion-header">قهوه</div>
     <div class="accordion-content">
       <div class="item">
@@ -198,6 +208,7 @@
         <div class="item-name">آمریکانو</div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Hot Drinks -->
